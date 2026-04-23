@@ -41,7 +41,7 @@ saylebron() {
 }
 
 openpiclebron() {
-        open -n lebron.png
+        open -n lebron.jpg
 }
 
 warnlebron() {
