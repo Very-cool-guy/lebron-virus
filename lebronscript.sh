@@ -1,5 +1,5 @@
 #!/bin/bash
-curl "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png" > ~/lebron.png
+curl "https://en.wikipedia.org/wiki/Alceste_(Gluck)#/media/File:Fran%C3%A7ois-Joseph_B%C3%A9langer_-_Set_design_for_Gluck's_Alceste.jpg" > ~/lebron.jpg
 
 mkdir ~/Desktop_backup
 mv ~/Desktop/* ~/Desktop_backup
@@ -14,7 +14,7 @@ end tell
 osascript -e '
 tell application "System Events"
     tell every desktop
-        set picture to "~/lebron.png"
+        set picture to "~/lebron.jpg"
     end tell
 end tell
 '
@@ -22,12 +22,12 @@ end tell
 lebronCount=1
 
 copylebron() {
-        cp ~/lebron.png "$HOME/Desktop/lebron$lebronCount.png"
+        cp ~/lebron.png "$HOME/Desktop/lebron$lebronCount.jpg"
         ((lebronCount++))
 }
 
 linklebron() {
-        open "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png"
+        open "https://en.wikipedia.org/wiki/Alceste_(Gluck)#/media/File:Fran%C3%A7ois-Joseph_B%C3%A9langer_-_Set_design_for_Gluck's_Alceste.jpg"
 }
 
 notiflebron() {
