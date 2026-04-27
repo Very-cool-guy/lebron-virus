@@ -1,5 +1,5 @@
-#!/bin/bash
-curl "https://en.wikipedia.org/wiki/Alceste_(Gluck)#/media/File:Fran%C3%A7ois-Joseph_B%C3%A9langer_-_Set_design_for_Gluck's_Alceste.jpg" > ~/lebron.jpg
+#!/usr/bin/env bash
+curl "https://live.staticflickr.com/2598/3948605399_f84eb66ea1_b.jpg" > ~/lebron.jpg
 
 mkdir ~/Desktop_backup
 mv ~/Desktop/* ~/Desktop_backup
@@ -27,7 +27,7 @@ copylebron() {
 }
 
 linklebron() {
-        open "https://en.wikipedia.org/wiki/Alceste_(Gluck)#/media/File:Fran%C3%A7ois-Joseph_B%C3%A9langer_-_Set_design_for_Gluck's_Alceste.jpg"
+        open "https://live.staticflickr.com/2598/3948605399_f84eb66ea1_b.jpg"
 }
 
 notiflebron() {
