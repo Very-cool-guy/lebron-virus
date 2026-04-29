@@ -3,7 +3,7 @@ mkdir -p ~/lebronapp.app/contents
 cd ~/lebronapp.app/contents
 mkdir MacOS Resources
 
-echo "<?xml version="1.0" encoding="UTF-8"?>
+echo '<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -19,7 +19,7 @@ echo "<?xml version="1.0" encoding="UTF-8"?>
     <string>APPL</string>
 </dict>
 </plist>
-" > info.plist
+' > info.plist
 
 cd MacOS
 echo "#!/usr/bin/env bash
