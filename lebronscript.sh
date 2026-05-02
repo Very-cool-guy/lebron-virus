@@ -63,14 +63,14 @@ docklebron() {
         open -n ~/lebronapp.app
 }
 
-menubarlebron() {
-        count=$(ps -eo command | grep -i "lebronappcopy" | wc -l | tr -d ' ')
-        if [ "$count" -le 10 ]; then
-                open -n ~/lebronappcopy.app
-        fi
-}
+# menubarlebron() {
+#         count=$(ps -eo command | grep -i "lebronappcopy" | wc -l | tr -d ' ')
+#         if [ "$count" -le 10 ]; then
+#                 open -n ~/lebronappcopy.app
+#         fi
+# }
 
-all_funcs=("copylebron" "linklebron" "notiflebron" "saylebron" "openpiclebron" "warnlebron" "docklebron" "menubarlebron")
+all_funcs=("copylebron" "linklebron" "notiflebron" "saylebron" "openpiclebron" "warnlebron" "docklebron")
 
 while true
 do
