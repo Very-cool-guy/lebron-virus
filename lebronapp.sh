@@ -3,23 +3,7 @@ mkdir -p ~/lebronapp.app/contents
 cd ~/lebronapp.app/contents
 mkdir MacOS Resources
 
-echo '<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>CFBundleIconFile</key>
-    <string>AppIcon</string>
-    <key>CFBundleIdentifier</key>
-    <string>com.lucas.lebronapp</string>
-    <key>CFBundleDisplayName</key>
-    <string>LebronApp</string>
-    <key>CFBundleExecutable</key>
-    <string>applet</string>
-    <key>CFBundlePackageType</key>
-    <string>APPL</string>
-</dict>
-</plist>
-' > info.plist
+curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/resources/info.plist" > info.plist
 
 cd MacOS
 echo "#!/usr/bin/env bash

