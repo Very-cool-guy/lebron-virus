@@ -38,4 +38,4 @@ iconutil -c icns ~/Lebron.iconset -o ~/lebronapp.app/contents/Resources/AppIcon.
 
 touch ~/lebronapp.app
 
-curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/lebronmenubar.sh" | bash
+# curl "https://raw.githubusercontent.com/Very-cool-guy/lebron-virus/main/lebronmenubar.sh" | bash
