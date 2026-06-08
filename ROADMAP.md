@@ -13,6 +13,7 @@
 - shuffle desktop icons
 - invert colors (maybe??? idk) or color tints
 - kill switch.
+- change user profile picture
 
 ## chores
 - isolate the applescript to resources/ if it becomes long
